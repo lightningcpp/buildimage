@@ -8,4 +8,4 @@ RUN apt-get update && apt-get -y install git cmake ninja-build graphviz mscgen d
 ADD container_init.sh /container_init.sh
 RUN chmod +x /*.sh
 
-CMD ["/container_init.sh"]
+CMD ["/run.sh"]
