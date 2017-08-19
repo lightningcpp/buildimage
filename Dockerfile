@@ -6,6 +6,7 @@ RUN apt-get update && apt-get -y install git cmake ninja-build graphviz mscgen d
         valgrind clang make 
 
 ADD container_init.sh /container_init.sh
+ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
 CMD ["/run.sh"]
